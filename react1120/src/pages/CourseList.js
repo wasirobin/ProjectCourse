@@ -28,7 +28,7 @@ function CourseList() {
       <Navbar />
       <ControlledCarousel />
       <TopCourse data={mydata.length ? mydata.slice(0, 4) : null} />
-      <BodyCourse data={mydata.length ? mydata.slice(4) : null} />
+      <BodyCourse data={mydata.length ? mydata.slice(4, 11) : null} />
       <Footer />
     </>
   )

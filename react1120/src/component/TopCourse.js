@@ -1,4 +1,7 @@
+import { useHistory } from 'react-router-dom'
+
 function TopCourse(props) {
+  let history = useHistory()
   const { data } = props
   let display = ''
   display =
@@ -16,7 +19,12 @@ function TopCourse(props) {
             <div class="up-left-in-right">
               <h3>{v.title}</h3>
               <h4 class="up-left-in-right-h4">{v.sub_title}</h4>
-              <button class="up-button">
+              <button
+                class="up-button"
+                onClick={() => {
+                  history.push(`/CourseDetail/${v.sid}`)
+                }}
+              >
                 <h3 class="up-button-h3">活動介紹</h3>
               </button>
             </div>

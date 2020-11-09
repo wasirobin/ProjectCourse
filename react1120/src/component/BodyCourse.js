@@ -1,4 +1,7 @@
+import { useHistory } from 'react-router-dom'
+
 function BodyCourse(props) {
+  let history = useHistory()
   const { data } = props
   console.log(data)
   let display = ''
@@ -20,7 +23,12 @@ function BodyCourse(props) {
             <div class="down-right-in">
               <h3>{v.title}</h3>
               <h4 class="down-right-in-h4">{v.sub_title}</h4>
-              <button class="up-button">
+              <button
+                class="up-button"
+                onClick={() => {
+                  history.push(`/CourseDetail/${v.sid}`)
+                }}
+              >
                 <h3 class="up-button-h3">活動介紹</h3>
               </button>
             </div>

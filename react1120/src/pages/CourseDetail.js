@@ -6,7 +6,7 @@ import Footer from '../component/Footer'
 import React, { useState, useEffect } from 'react'
 
 function CourseDetail() {
-  const [mydata, setMydata] = useState([])
+  const [mydata, setMydata] = useState()
   const getData = async () => {
     const res = await fetch('http://localhost:3000/get-db', {
       method: 'get',
