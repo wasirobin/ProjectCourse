@@ -105,6 +105,12 @@ h4 {
   background-color: #dcd7cc;
 }
 
+.list-down {
+  width: 1170px;
+  height: 640px;
+  margin: 0 auto;
+  border-bottom: solid 1px grey;
+}
 
 .down-left {
   width: 570px;
