@@ -10,9 +10,9 @@ function BodyCourseDetail(props) {
   const myData = id && data && data[id - 1]
   return myData ? (
     <>
-      <div class="top-250"></div>
+      <div class="top-100"></div>
       <div class="top-page-green">
-        <div class="block">
+        <div class="box">
           <div class="box-left">
             <h4 class="box-left-h4">{myData.text}</h4>
           </div>
