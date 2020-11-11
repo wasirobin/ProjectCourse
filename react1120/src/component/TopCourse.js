@@ -17,7 +17,7 @@ function TopCourse(props) {
               />
             </div>
             <div class="up-left-in-right">
-              <h3>{v.title}</h3>
+              <h3 class="up-left-in-right-h3">{v.title}</h3>
               <h4 class="up-left-in-right-h4">{v.sub_title}</h4>
               <button
                 class="up-button"
@@ -29,23 +29,22 @@ function TopCourse(props) {
               </button>
             </div>
           </div>
-          {/* <div class="up-bottom"></div> */}
         </div>
       )
     })
   return (
     <>
-      <div class="top-100"></div>
+      <div class="top-50"></div>
 
       <div class="top-title">
         <div class="top-title-in">
-          <h3 class="top-title-in-h3">
+          <h2>
             人類對環境的傷害往往來自於漠視與無感。因此面對現今的環境問題，
             最終仍須回到與「人」的溝通。
             <br />
-            艸艸相信，理解與使用友善環境的產品，是一股溫柔且深耕的力量，
-            可以觸動人心，溝通彼此，轉變價值觀並鼓勵環境行動的實踐。
-          </h3>
+            艸艸相信，理解與使用友善環境產品，是股溫柔且深耕的力量，
+            可以觸動人心、轉變價值觀並實踐友善環境的承諾。
+          </h2>
         </div>
       </div>
       <div>{display}</div>
