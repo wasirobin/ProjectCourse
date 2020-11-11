@@ -25,3 +25,4 @@ function TopCourseDetail(props) {
 }
 
 export default TopCourseDetail
+
